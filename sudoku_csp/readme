@@ -1,0 +1,35 @@
+## Files here:
+    sudoku.py           --> source code
+    sudoku_batch.py     --> batch version of above code
+    sudoku_batch_run.py --> run all sudokus in 'sudokus_start.txt'
+
+## Problem:
+Solve the sudoku
+0 is an unassigned cell in sudoku grid. 
+All 0's need to be assigned following sudoku rules for final goal state of grid.
+
+## Output:
+    Written to output.txt
+
+## How to run?
+    1. Run individual sudoku
+            python sudoku.py 000260701680070090190004500820100040004602900050003028009300074040050036703018000 
+            python sudoku.py 000000000302540000050301070000000004409006005023054790000000050700810000080060009
+
+    2. Run all sudokus is 'sudokus_start.txt' in batch mode:
+            python sudoku_run_batch.py 
+
+## Note:
+    The code attempts to solve using AC3 (arc consistency) first, and then BTS (backtrack search) later
+
+## This is the structure or pattern assumed in the code and log file:
+  1 2 3 4 5 6 7 8 9
+A
+B
+C
+D
+E
+F
+G
+H
+I

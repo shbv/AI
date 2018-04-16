@@ -1,0 +1,17 @@
+# How to run? 
+python GameManager_3.py
+
+# Rules:
+Each move can be up, down, left, right 
+All the tiles in the grid move except when they are obstructed by non-zero tile that cannot move as well
+Adjacent tiles merge if they are equal 
+Player needs to make the move within 0.2 seconds after computer move to generate grid value
+Make maximum score before grid is filled
+
+# Algorithm:
+Minimax algorithm with alpha beta pruning is used
+Several heuristics are used to estimate the utility of a state 
+(since exploring till leaf node of search tree is not plausible within time constraint)  
+
+
+
